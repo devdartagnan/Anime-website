@@ -1,6 +1,13 @@
 import data from "./api";
 
-// const animeSection = document.querySelector('#animesSection') as HTMLElement
+interface ObjProp {
+    ids:string,
+    url:string,
+    title:string,
+    description:string,
+    thumb:string,
+}
+
 const lancamentosSection = document.querySelector('#lancamentosSection') as HTMLElement
 function addingCards() {
 
@@ -10,7 +17,7 @@ function addingCards() {
         const h3 = document.createElement('h3') as HTMLElement
         const paragraph = document.createElement('p') as HTMLElement
         const aLink = document.createElement('a') as HTMLElement
-        
+
         aLink.addEventListener('click', () => setStorage(el))
         paragraph.textContent = el.title
         h3.textContent = el.title
@@ -26,7 +33,7 @@ function addingCards() {
 }
 addingCards()
 
-function setStorage(el: object) {
+function setStorage(el: ObjProp) {
     const apiAdd = {
         "id": el?.ids,
         "url": el?.url,
