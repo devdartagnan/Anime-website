@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../src/styles/index.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime player </title>
+</head>
+
+<body>
+    <header class="header container">
+        <span class="material-symbols-outlined" id="navIcon">menu</span>
+        <a href="index.html">
+            <img src="/anime-seeker-transformed.png" alt="Logo Anime generico" class="nav-logo">
+        </a>
+        <div class="header-list none">
+            <ul>
+                <li>Animes</li>
+                <li>Calendário</li>
+                <li>Gêneros</li>
+                <li>Discord</li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined" id="searchIcon"> search </span>
+        <div class="search none">
+            <input type="text" placeholder="Pesquisar...">
+            <i></i>
+        </div>
+        <i></i>
+    </header>
+    <nav class="container">
+        <div class="nav-search none">
+            <input type="text" placeholder="Pesquisar...">
+            <i></i>
+        </div>
+        <div class="navbar none">
+            <section class="navbar-login">
+                <button class="login-btn"><a href="login.html">Entrar</a></button>
+                <button class="register-btn"><a href="pages/login.html">Cadastrar</a></button>
+            </section>
+            <section class="nav-list">
+            </section>
+        </div>
+    </nav>
+    <main class="main-player">
+        <form id="playerForm ">
+            <div class="main-player__form">
+                <video id="videoPlayer" src="" width="350" height="260" controls>
+                </video>
+
+                <div id="controlesPlayer" class="controles-player">
+                    <span class="material-symbols-outlined controle-icon">
+                        arrow_circle_left
+                    </span>
+                    <span class="material-symbols-outlined controle-icon">
+                        menu
+                    </span>
+                    <span class="material-symbols-outlined controle-icon">
+                        arrow_circle_right
+                    </span>
+                </div>
+                <div class="main-player__info">
+                    <h2 id="title"></h2>
+                    <p class="descriptionPlayer" id="descriptionPlayer"></p>
+                </div>
+            </div>
+            <div class="video-player__share">
+                <span class="material-symbols-outlined controle-icon">
+                    thumb_up
+                </span>
+                <span class="material-symbols-outlined controle-icon">
+                    thumb_down
+                </span>
+                <span class="material-symbols-outlined controle-icon">
+                    favorite
+                </span>
+                <span class="material-symbols-outlined controle-icon">
+                    sentiment_satisfied
+                </span>
+                <span class="material-symbols-outlined controle-icon">
+                    sentiment_dissatisfied
+                </span>
+                <span class="material-symbols-outlined controle-icon">
+                    sentiment_very_satisfied
+                </span>
+            </div>
+            <section class="comment container">
+                <div class="comment_info">
+                    <p>0 Comentarios</p>
+                    <p>Entrar</p>
+                </div>
+                <input class="comment_input" type="text" placeholder="Faça um comentario">
+                <h4>Fazer login</h4>
+                <div>
+                    Icones
+                </div>
+                <div>
+                    <ul class="comment_nav">
+                        <li>Mais votados</li>
+                        <li>Mais recentes</li>
+                        <li>Mais antigos</li>
+                    </ul>
+                    <div class="all-comments"><span>Seja o primeiro a comentar</span></div>
+                </div>
+            </section>
+        </form>
+        <section class="container">
+            <p>Populares</p>
+            <figure>
+                <img src="" alt="">
+                <p></p>
+                <p></p>
+            </figure>
+        </section>
+    </main>
+    <script type="module" src="/src/components/loadVideo.ts"></script>
+    <script type="module" src="/src/components/nav.ts"></script>
+</body>
+
+</html>

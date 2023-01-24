@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/styles/index.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site de animes generico</title>
+</head>
+
+<body>
+  <header class="header container">
+    <span class="material-symbols-outlined" id="navIcon">menu</span>
+    <img src="/anime-seeker-transformed.png" alt="Logo Anime generico" class="nav-logo">
+    <div class="header-list none">
+      <ul>
+        <li>Animes</li>
+        <li>Calendário</li>
+        <li>Gêneros</li>
+        <li>Discord</li>
+      </ul>
+    </div>
+    <span class="material-symbols-outlined" id="searchIcon"> search </span>
+    <div class="search none">
+      <input type="text" placeholder="Pesquisar...">
+      <i></i>
+    </div>
+    <i></i>
+  </header>
+  <nav class="container nav">
+    <div class="nav-search none">
+      <input type="text" placeholder="Pesquisar...">
+      <i></i>
+    </div>
+    <div class="navbar none">
+      <section class="navbar-login">
+        <button class="login-btn"><a href="login.html">Entrar</a></button>
+        <button class="register-btn"><a href="login.html">Cadastrar</a></button>
+      </section>
+      <section class="nav-list">
+      </section>
+    </div>
+  </nav>
+  <main class="container" id="app">
+    <section class="filtro">
+      <ul class="filtro-alpha">
+        <li><a href="#">#</a></li>
+        <li><a href="#">A</a></li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">D</a></li>
+        <li><a href="#">E</a></li>
+        <li><a href="#">F</a></li>
+        <li><a href="#">G</a></li>
+        <li><a href="#">H</a></li>
+        <li><a href="#">I</a></li>
+        <li><a href="#">J</a></li>
+        <li><a href="#">K</a></li>
+        <li><a href="#">L</a></li>
+        <li><a href="#">M</a></li>
+        <li><a href="#">N</a></li>
+        <li><a href="#">O</a></li>
+        <li><a href="#">P</a></li>
+        <li><a href="#">Q</a></li>
+        <li><a href="#">R</a></li>
+        <li><a href="#">S</a></li>
+        <li><a href="#">T</a></li>
+        <li><a href="#">U</a></li>
+        <li><a href="#">V</a></li>
+        <li><a href="#">X</a></li>
+        <li><a href="#">Y</a></li>
+        <li><a href="#">W</a></li>
+        <li><a href="#">Z</a></li>
+      </ul>
+    </section>
+    <section class="videos">
+      <h1 class="main_title">Calendário de hoje</h1>
+      <div class="grid-videos" id="videos-calendario">
+    </section>
+    <section class="videos">
+      <div class="title_nav">
+        <h2 class="main_title">Lançamentos</h2>
+        <div class="main_info_button">
+          <p>17,000</p><button type="submit">ver tudo</button>
+        </div>
+      </div>
+      <div class="grid-videos" id="lancamentosSection">
+        <!-- Javascript Entries-->
+      </div>
+    </section>
+    <section class="videos">
+      <div class="title_nav">
+        <h3 class="main_title">Animes</h3>
+        <div class="main_info_button">
+          <p>17,000</p>
+          <button type="submit">ver tudo</button>
+          <span class="material-symbols-outlined arrow">
+            arrow_left
+          </span>
+          <span class="material-symbols-outlined arrow">
+            arrow_right
+          </span>
+        </div>
+      </div>
+      <div class="grid-videos" id="animesSection">
+        <!-- Javascript Entries-->
+      </div>
+    </section>
+    <section class="videos">
+      <div class="title_nav">
+        <h3 class="main_title">Filmes</h3>
+        <div class="main_info_button">
+          <p>17,000</p>
+          <button type="submit">ver tudo</button>
+          <span class="material-symbols-outlined arrow">
+            arrow_left
+          </span>
+          <span class="material-symbols-outlined arrow">
+            arrow_right
+          </span>
+        </div>
+      </div>
+      <div class="grid-videos">
+        <figure>
+          <img src="" alt="#">
+          <p></p>
+          <p></p>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="/src/components/indexVideos.ts"></script>
+  <script type="module" src="/src/components/nav.ts"></script>
+</body>
+
+</html>

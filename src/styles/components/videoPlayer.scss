@@ -1,0 +1,120 @@
+@import '../base/var';
+@import '../mixin/display.scss';
+
+.main-player {
+    font-family: $font-family;
+
+    .main-player__form {
+        video {
+            border-bottom: solid #474747 1.5px;
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+
+        .main-player__info {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            height: auto;
+            padding: 32px 16px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+    }
+
+    .controles-player {
+        align-items: center;
+        background-color: $black;
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+
+        .controle-icon {
+            @include flex-j-a;
+            border: solid 1.5px #474747;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .descriptionPlayer {
+        font-weight: 300;
+    }
+
+    .video-player__share {
+        @include flex-j-a;
+        border-bottom: solid #474747 1.5px;
+        border-top: solid #474747 1.5px;
+        gap: 16px;
+        height: 60px;
+        width: 100%;
+
+        span {
+            cursor: pointer;
+        }
+    }
+
+    .comment {
+        color: $font-nav;
+        height: auto;
+        margin: 0 16px;
+        .comment_info {
+            @include flex-j-a;
+            flex-direction: row;
+            height: 60px;
+            justify-content: space-between;
+            p{
+                font-weight: 700;
+            }
+        }
+
+        .comment_input {
+            border-radius: 12px;
+            height: 50px;
+            margin-bottom: 16px;
+            padding-left: 8px;
+            width: calc(100% - 8px);
+        }
+
+        h4 {
+            @include flex-j-a;
+            height: 40px;
+            justify-content: left;
+        }
+
+        .comment_nav {
+            @include flex-j-a;
+            height: 60px;
+            gap: 8px;
+
+            li {
+                border-bottom: solid 2px $bg-dark;
+                font-weight: 700;
+                font-size: 14px;
+                margin: 8px 0; 
+                padding-bottom: 4px;
+            }
+
+            li:active {
+                box-sizing: content-box;
+                border-bottom: solid 2px $red-detail;
+                padding-bottom: 4px;
+            }
+        }
+
+        .all-comments {
+            @include flex-j-a;
+            align-items: flex-start;
+            font-weight: 300;
+            height: 200px;
+            margin-top: 16px;
+            max-height: 700px;
+        }
+    }
+}
+

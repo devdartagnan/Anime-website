@@ -1,0 +1,17 @@
+@import '../base/var';
+
+.container{
+    font-family: $font-family;
+    padding:0 8px;
+}
+
+@media screen and (min-width: 674px) {
+    .container{
+        padding:0 16px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        padding:0 32px;
+    }
+}
