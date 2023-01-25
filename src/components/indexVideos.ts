@@ -1,14 +1,20 @@
-import data from "./api";
+import { createClient } from '@supabase/supabase-js'
+const supabase = createClient('https://blgciguaqtqtubjofbfy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJsZ2NpZ3VhcXRxdHViam9mYmZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzIzNTc5MjEsImV4cCI6MTk4NzkzMzkyMX0.xzQBc-i_R_aKgMIvwCkYzTiuXYirlrDvW9oZ0GbI91M')
+
+const { data } = await supabase
+    .from('anime')
+    .select('*')
 
 interface ObjProp {
-    ids:string,
-    url:string,
-    title:string,
-    description:string,
-    thumb:string,
+    ids: string,
+    url: string,
+    title: string,
+    description: string,
+    thumb: string,
 }
 
 const lancamentosSection = document.querySelector('#lancamentosSection') as HTMLElement
+
 function addingCards() {
 
     data?.forEach((el) => {
