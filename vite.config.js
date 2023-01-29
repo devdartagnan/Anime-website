@@ -16,8 +16,6 @@ export default defineConfig({
                 main: resolve(root, 'index.html') ,
                 login: resolve(root, 'login.html') ,
                 player: resolve(root, 'player.html') ,
-                // src: './src/*'// ...
-                // List all files you want in your build
             }
         }
     },

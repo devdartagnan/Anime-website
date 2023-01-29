@@ -1,0 +1,22 @@
+@import '../base/var';
+.form-video{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 2rem;
+    input{
+        box-sizing: border-box;
+        height: 36px;
+        padding-left: 1.35rem;
+        width:360px;
+    }
+    button{
+        background-color: $red-detail;
+        border: none;
+        border-radius: 4px;
+        color: $font-color;
+        height: 36px;
+        width: 120px;
+    }
+}
