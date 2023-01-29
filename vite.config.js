@@ -1,15 +1,22 @@
 import topLevelAwait from "vite-plugin-top-level-await";
 import legacy from '@vitejs/plugin-legacy'
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
+
+const root = resolve(__dirname, 'src')
+const outDir = resolve(__dirname, 'dist')
 
 export default defineConfig({
+    root,
     build: {
+        outDir,
+        emptyOutDir: false,
         rollupOptions: {
             input: {
-                main: './index.html',
-                login: './login.html',
-                player: './player.html',
-                // ...
+                main: resolve(root, 'index.html') ,
+                login: resolve(root, 'login.html') ,
+                player: resolve(root, 'player.html') ,
+                // src: './src/*'// ...
                 // List all files you want in your build
             }
         }
